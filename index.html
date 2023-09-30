@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="shortcut icon" href="image/clouds.png" type="image/x-icon">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+
+<body>
+    <div class="box">
+        <header class="title"><i class="bx bx-left-arrow-alt"></i>Weather App</header>
+
+
+        <section class="input">
+            <p class="info-txt">Enter a valid city name</p>
+            <input type="text" name="place" placeholder="enter city name">
+            <div class="seperator"></div>
+            <button>Get device location</button>
+        </section>
+
+        <section class="weather-part">
+            <img src="clear.png" alt="weather icon">
+            <div class="temp">
+                <span class="numb">13</span>
+                <span class="deg">&deg</span>
+                <span class="numb">C</span>
+            </div>
+            <div class="location">
+                <span class="name"><i class="bx bx-map"></i> Bokaro , Jharkhand</span>
+                <span class="des">Sunny</span>
+            </div>
+            <div class="bottom-details">
+                <div class="column feels">
+                    <i class="bx bxs-thermometer"></i>
+                    <div class="temp2">
+                        <span id="feelslike">13</span>
+                        <span class="deg">&#x2103</span>
+                        <p>Feels like</p>
+                    </div>
+
+                </div>
+                <div class="column humidity">
+                    <i class="bx bxs-droplet-half"></i>
+                    <div class="humidity">
+                        <span id="humid">84 </span>%
+                        <p>Humidity</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+   
+</body>
+
+</html>
